@@ -11,11 +11,15 @@ package domacijarvis;
  */
 public class DomaciJarvis {
 
+    class Tacka{
+    int x,y;
+    }
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
     
 }
