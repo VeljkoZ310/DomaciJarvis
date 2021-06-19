@@ -9,11 +9,12 @@ package domacijarvis;
  *
  * @author vzavi
  */
-public class DomaciJarvis {
-
-    class Tacka{
+class Tacka{
     int x,y;
     }
+public class DomaciJarvis {
+
+    
     
     /**
      * @param args the command line arguments
