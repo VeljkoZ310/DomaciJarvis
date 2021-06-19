@@ -20,18 +20,27 @@ public class DomaciJarvis {
 
     public static Scanner sc = new Scanner(System.in);
 
+    public void ispisi(Tacka[] tacke, int[] sledeci) {
+        System.out.println("\nIspis");
+        for (int i = 0; i < sledeci.length; i++) {
+            if (sledeci[i] != -1) {
+                System.out.println("(" + tacke[i].x + ", " + tacke[i].y + ")");
+            }
+        }
+    }
+
     public static void main(String[] args) {
         DomaciJarvis dj = new DomaciJarvis();
-        int brTacaka=8;
+        int brTacaka = 8;
         System.out.println("Broj tacaka je 8:");
-        Tacka[] tacke= new Tacka[brTacaka];
+        Tacka[] tacke = new Tacka[brTacaka];
         for (int i = 0; i < tacke.length; i++) {
-            tacke[i]=new Tacka();
-            System.out.print("Unesi x koordinatu za "+i+" tacku:");
-            tacke[i].x=sc.nextInt();
+            tacke[i] = new Tacka();
+            System.out.print("Unesi x koordinatu za " + i + " tacku:");
+            tacke[i].x = sc.nextInt();
             System.out.println("");
-            System.out.print("Unesi y koordinatu za "+i+" tacku:");
-            tacke[i].y=sc.nextInt();
+            System.out.print("Unesi y koordinatu za " + i + " tacku:");
+            tacke[i].y = sc.nextInt();
             System.out.println("");
         }
     }
