@@ -17,8 +17,17 @@ class Tacka {
 }
 
 public class DomaciJarvis {
+    
+    
 
     public static Scanner sc = new Scanner(System.in);
+    
+    private boolean CCW(Tacka p, Tacka q, Tacka r){
+        int rez = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
+         if (rez >= 0)
+             return false;
+         return true;
+    }
 
     public void ispisi(Tacka[] tacke, int[] sledeci) {
         System.out.println("\nIspis");
